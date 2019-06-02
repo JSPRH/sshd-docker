@@ -4,7 +4,7 @@ Dockerized ssh server with key-based access.
 ## Instructions
 
 1. Generate all necessary keys via `make generate-keys`
-2. Build the docker image and start the container via `make up``
+2. Build the docker image and start the container via `make up`
 3. Enjoy 🎉
 
 ## FAQ
