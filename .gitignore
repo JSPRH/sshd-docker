@@ -1,0 +1,7 @@
+.DS_Store
+
+# remove all keys but keep folder structure
+docker/keys/host/*
+!docker/keys/host/.gitkeep
+docker/keys/root/*
+!docker/keys/root/.gitkeep

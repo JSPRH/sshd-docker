@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  ssh-server:
+    build: .
+    ports:
+      - $SSH_PORT:22
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
+        window: 300s

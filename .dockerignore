@@ -1,0 +1,5 @@
+/keys/root/id_rsa
+Dockerfile
+docker-compose.yml
+Makefile
+.git
