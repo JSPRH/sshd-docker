@@ -3,3 +3,4 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 LogLevel VERBOSE
 ChallengeResponseAuthentication no
+PermitRootLogin yes
