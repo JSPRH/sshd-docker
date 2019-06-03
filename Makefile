@@ -26,8 +26,6 @@ generate-keys:
 	ssh-keygen -f docker/keys/root/id_rsa -N '' -t rsa -C ${PROJECT} -b 4096
 	echo "Generating host rsa key pair"
 	ssh-keygen -f docker/keys/host/ssh_host_rsa_key -N '' -t rsa -C ${PROJECT} -b 4096
-	#echo "Generating host dsa key pair"
-	#ssh-keygen -f docker/keys/host/ssh_host_dsa_key -N '' -t dsa -C ${PROJECT}
 	echo "Generating host ecdsa key pair"
 	ssh-keygen -f docker/keys/host/ssh_host_ecdsa_key -N '' -t ecdsa -C ${PROJECT}
 	echo "Generating host ecdsa key pair"
