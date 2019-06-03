@@ -1,8 +1,10 @@
-FROM alpine
+FROM alpine:3.9
 
-# add openssh and clean
-RUN apk add --update openssh \
-    && rm  -rf /tmp/* /var/cache/apk/*
+# add openssh
+RUN apk add --no-cache openssh
+
+# reset the root password
+RUN passwd -d root
 
 # copy sshd config
 COPY docker/sshd_config /etc/ssh/
